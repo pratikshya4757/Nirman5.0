@@ -1,4 +1,4 @@
-import { Play, Sparkles, Database, Brain } from 'lucide-react';
+import { Sparkles, Database } from 'lucide-react';
 
 export default function Hero() {
   const scrollToSection = (href: string) => {
@@ -15,47 +15,29 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(236,72,153,0.05),transparent_50%)]"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500/10 to-pink-500/10 border border-amber-500/20 backdrop-blur-sm">
+        <div className="grid grid-cols-1 gap-12">
+          <div className="space-y-8 text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500/10 to-pink-500/10 border border-amber-500/20 backdrop-blur-sm mx-auto">
               <Sparkles className="w-4 h-4 text-amber-400" />
               <span className="text-sm text-amber-400 font-medium">AI-Powered Legal Intelligence</span>
             </div>
 
-            <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-5xl lg:text-7xl font-bold leading-tight max-w-4xl mx-auto">
               <span className="bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent">
                 NyayAI
               </span>
-              <br />
-              <span className="text-white">The AI Co-Pilot for</span>
-              <br />
+              <span className="text-white"> — The AI Co-Pilot for </span>
               <span className="bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent">
                 Indian Courts
               </span>
             </h1>
 
-            <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
+            <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
               NyayAI turns NJDG and Commercial Courts data into instant legal intelligence — natural language search, AI judgment summaries, predictive analytics, and citation graphs for judges and lawyers.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                onClick={() => scrollToSection('#contact')}
-                className="px-8 py-4 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-semibold transition-all duration-300 shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 hover:scale-105"
-              >
-                Request Early Access
-              </button>
-              <button className="px-8 py-4 rounded-lg border-2 border-amber-500/30 hover:border-amber-500/60 text-amber-400 font-semibold transition-all duration-300 flex items-center justify-center gap-2 hover:bg-amber-500/5">
-                <Play className="w-5 h-5" />
-                Watch Product Walkthrough
-              </button>
-            </div>
 
-            <div className="flex flex-wrap gap-4 pt-4">
-              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 backdrop-blur-sm border border-cyan-500/20">
-                <Brain className="w-4 h-4 text-cyan-400" />
-                <span className="text-sm text-gray-300">Powered by LegalBERT & GPT</span>
-              </div>
+            <div className="flex flex-wrap gap-4 pt-4 justify-center">
               <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 backdrop-blur-sm border border-amber-500/20">
                 <Sparkles className="w-4 h-4 text-amber-400" />
                 <span className="text-sm text-gray-300">Built for Indian Commercial Courts</span>
